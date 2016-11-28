@@ -91,7 +91,13 @@ $arrays=array(
 	"ConsultaUsaurio"=>"Consultar Usuario",
 	"Altarealizada"=>"Insercion Realizada",
 	"Altaerronea"=>"Rellene los campos necesarios",
-	"Noviembre"=>"Noviembre");
+	"Noviembre"=>"Noviembre",
+	"GestionFactura"=>"Gestion de Pagos y Facturas",
+	"ConsultaFactura"=>"Consultar Facturas",
+	"NuevoPago"=>"Nuevo Pago"
+	
+	
+	);
 
 return $arrays;
 }
@@ -180,7 +186,13 @@ $arrays=array(
 	"ModificacionUsuario"=>"Modificar  Usuario",
 	"ConsultaUsaurio"=>"Consultar Usuario",
 	"Altaerronea"=>"Enche os campos necesarios",
-	"Noviembre"=>"Novembro");
+	"Noviembre"=>"Novembro",
+			
+	"GestionFactura"=>"Gestion dos Pagos e Facturas",
+	"ConsultaFactura"=>"Consultar as Facturas",
+	"NuevoPago"=>"Novo Pago"
+	
+	);
 
 return $arrays;
 
@@ -278,7 +290,14 @@ $arrays=array(
 	"ModificacionUsuario"=>"Update User",
 	"ConsultaUsaurio"=>"Search User",
 	"Altaerronea"=>"Rellene los campos necesarios",
-	"Noviembre"=>"November");
+	"Noviembre"=>"November",
+	
+			
+	"GestionFactura"=>"Payment and Invoice Management",
+	"ConsultaFactura"=>"Search Invoices",
+	"NuevoPago"=>"New Payment"
+	
+	);
 
 return $arrays;
 

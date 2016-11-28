@@ -81,6 +81,9 @@ class menulateral{
                         
                         </li>
                     </li>
+					
+					
+					
                     <li>
                         <li>
                         <?php
@@ -113,6 +116,9 @@ class menulateral{
                        <?php   }}echo"</ul>";}} ?>
                       </li>
                     </li>
+					
+					
+					
                         <li>
                         <li>
                          <?php
@@ -142,8 +148,44 @@ class menulateral{
                             </li>
                                        
                          <?php   }} echo"</ul>";}}?>
+						 
+						 
                         </li>
                         </li>
+						
+						<li>
+                        <li>
+                         <?php
+                        for($numar=0;$numar<count($form);$numar++)
+                        {
+							if($form[$numar]["nombre"]=="Gestion de Factura")
+							{?>
+								<a href="javascript:;" data-toggle="collapse" data-target="#downFactura"><i class="fa fa-credit-card" aria-hidden="true"></i><?php echo $idioma['GestionFactura'];?> <i class="fa fa-fw fa-caret-down"></i></a>
+								<ul id="downFactura" class="collapse">
+								<li>
+								<?php  
+								for($cont=0;$cont<2;$cont++)
+								{ 
+									if(isset($form[$numar]["accion"][$cont])and $form[$numar]["accion"][$cont]=="NuevoPago" )
+									{?>
+										<a href="..\Controlador\Factura_Controller.php?NuevoPago"><?php echo $idioma['NuevoPago'];?></a>
+										</li>
+										<?php  
+									}
+									if(isset($form[$numar]["accion"][$cont])and $form[$numar]["accion"][$cont]=="ConsultaFactura")
+									{?>
+										<li>
+										<a href="..\Controlador\Factura_Controller.php?ConsultaFactura"><?php echo $idioma['ConsultaFactura'];?></a>
+										</li>
+												   
+									 <?php   
+									}
+								} echo"</ul>";
+							}
+						}?>
+                        </li>
+                        </li>
+									
                    
                 </ul>
             </div>

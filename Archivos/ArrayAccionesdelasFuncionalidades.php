@@ -32,4 +32,9 @@ array("nombre"=>'Gestion de Usuarios',
 'Modificar',
 'Ver en Detalle',
 )),
+array("nombre"=>'Gestion de Factura',
+"accion"=>array(
+'NuevoPago',
+'ConsultaFactura',
+)),
 );return $form;}}?>
